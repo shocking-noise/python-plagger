@@ -1,0 +1,11 @@
+- module: feed.twitter_search
+  config:
+    q:
+      - appengine
+    page: 2
+
+- module: filter.grep
+  config:
+    regex: ".*"
+
+- module: standard.stdout
