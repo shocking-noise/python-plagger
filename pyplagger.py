@@ -15,12 +15,12 @@ __version__ = '1.00'
 
 plugins = {}
 
-def dynamic_import(name):
-    mod = __import__(name,globals(),locals().[],-1)
-    components = name.split('.')
-    for comp in components[1:]:
-        mod = getattr(mod,comp)
-    return mod
+#def dynamic_import(name):
+#    mod = __import__(name,globals(),locals().[],-1)
+#    components = name.split('.')
+#    for comp in components[1:]:
+#        mod = getattr(mod,comp)
+#    return mod
 
 def load_module(module_name,basedir):
     file,pathname,description=imp.find_module(module_name,[basedir])
